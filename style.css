@@ -10,7 +10,6 @@ a {
 
 section {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +41,7 @@ h1 {
     color: white;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .content-sec {
@@ -117,7 +116,7 @@ h1 {
 
 .menu-3 {
     padding: 10px 20px;
-    background-color: red;
+    background-color: skyblue;
     color: black;
     margin: 15px;
     text-align: center;
@@ -149,4 +148,35 @@ button {
 .icon {
     display: flex;
     justify-content: space-around;
+}
+
+.view-btn {
+    background-color: skyblue;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* footer style  */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 300px;
+}
+
+hr {
+    border: 0.5px solid gray;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.footer-menu a {
+    padding: 5px 30px;
+    color: white;
+
 }
