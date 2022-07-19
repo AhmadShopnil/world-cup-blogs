@@ -8,8 +8,15 @@ a {
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 section {
-    width: 100%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,6 +175,7 @@ button {
 
 /* footer style  */
 footer {
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,7 +202,7 @@ hr {
 }
 
 /* Responsive For Tablet */
-@media screen and (min-width:688px) and (max-width:1200px) {
+@media screen and (min-width:699px) and (max-width:1250px) {
     .banner {
         width: 90%;
     }
@@ -219,14 +227,12 @@ hr {
     }
 
     .blogs {
-        width: 95%;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         margin: 30px;
     }
 
-    .blog img {
-        width: 100%;
-    }
+
 
     .hidden-1 {
         display: none;
@@ -238,6 +244,44 @@ hr {
 
     .footer-menu {
         grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-sec {
+        width: 100%;
+    }
+
+    .image-sec {
+        width: 100%;
+    }
+
+    .sec-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-bar {
+        width: 50%;
+        background-color: transparent;
+    }
+
+    .blogs {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer-menu {
+        grid-template-columns: repeat(1, 1fr);
 
     }
 }
