@@ -28,6 +28,7 @@ h1 {
 /* Banner section style  */
 .sec-1 {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,11 +46,12 @@ h1 {
 }
 
 .content-sec {
-    width: 50%;
+    width: 40%;
     height: 90%;
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 30px;
 }
 
 .content {
@@ -69,19 +71,19 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 
 .image-sec img {
-    width: 80%;
+    width: 100%;
 }
 
 /* Blog section style  */
 .sec-2 {
     width: 95%;
     display: flex;
-
+    margin: 15px;
     justify-content: space-between;
 }
 
@@ -128,16 +130,21 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+
 }
 
 .blog {
     border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 .blog-content {
     padding: 15px;
+}
+
+.blog img {
+    width: 100%;
 }
 
 button {
@@ -154,8 +161,9 @@ button {
     background-color: skyblue;
     border: none;
     border-radius: 8px;
-    padding: 12px;
+    padding: 10px 35px;
     font-size: 18px;
+    display: none;
 }
 
 /* footer style  */
@@ -175,8 +183,61 @@ hr {
     margin-bottom: 20px;
 }
 
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .footer-menu a {
     padding: 5px 30px;
     color: white;
+}
 
+/* Responsive For Tablet */
+@media screen and (min-width:688px) and (max-width:1200px) {
+    .banner {
+        width: 90%;
+    }
+
+    .sec-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-bar {
+        flex-direction: row;
+        width: 95%;
+        background-color: transparent;
+        margin: 20px;
+        justify-content: space-between;
+    }
+
+    .t-mode {
+        margin: 0px;
+        width: 25%;
+    }
+
+    .blogs {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    .hidden-1 {
+        display: none;
+    }
+
+    .view-btn {
+        display: block;
+    }
+
+    .footer-menu {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
 }
