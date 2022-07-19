@@ -4,12 +4,17 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 section {
     width: 100%;
-    height: 500px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -22,9 +27,15 @@ h1 {
 }
 
 /* Banner section style  */
+.sec-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .banner {
-    width: 80%;
+    width: 95%;
     height: 100%;
     display: flex;
     background-color: black;
@@ -64,5 +75,78 @@ h1 {
 }
 
 .image-sec img {
-    width: 85%;
+    width: 80%;
+}
+
+/* Blog section style  */
+.sec-2 {
+    width: 95%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22%;
+    height: 40%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+
+.menu-1 {
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.menu-2 {
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0px 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.menu-3 {
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.blogs {
+    width: 76%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.blog {
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+button {
+    padding: 6px 17px;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
 }
